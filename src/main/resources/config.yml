@@ -1,0 +1,27 @@
+# GaunCraft_Resourcepack-4
+# Paket jar'in icinden okunur, SHA-1 her acilista dosyadan hesaplanir.
+
+# public-url DOLU ise paket bu adresten indirilir (GitHub), yerlesik web sunucu kapali kalir.
+# GitHub Actions ile derlenen jar'da bu satir otomatik doldurulur.
+# Bos ise yerlesik web sunucu kullanilir (host + port acik olmali).
+public-url: '${pack.url}'
+
+# Yerlesik web sunucu icin (public-url bossa)
+host: ''
+port: 8767
+bind-address: '0.0.0.0'
+http-threads: 4
+suppress-host-warning: false
+
+# true = oyuncu paketi reddedemez
+force: true
+kick-on-decline: false
+
+# Girisinden kac tick sonra gonderilsin (20 tick = 1 sn)
+send-delay-ticks: 60
+
+# Mesajlar (& renk kodlari). Bos birakirsan gonderilmez.
+prompt: '&aSunucunun gerçek deneyimi için zorunludur.'
+message-accepted: ''
+message-failed: '&cGaunCraft_Resourcepack-4 kurulamadı. Sunucuya tekrar girip deneyin.'
+kick-message: '&cBu sunucuda oynayabilmek için sunucunun özel paketlerini kabul etmelisiniz.'

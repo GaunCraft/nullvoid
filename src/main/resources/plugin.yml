@@ -1,0 +1,15 @@
+name: GaunCraft_Resourcepack-4
+version: '4'
+main: net.gauncraft.packserver.PackServerPlugin
+api-version: '1.21'
+description: GaunCraft_Resourcepack-4.
+author: GaunCraft
+commands:
+  gcpack4:
+    description: Resource pack info / manual send / reload.
+    usage: /gcpack4 <info|send [player]|reload>
+    permission: gauncraftpack4.admin
+permissions:
+  gauncraftpack4.admin:
+    description: Manage the GaunCraft resource pack.
+    default: op
